@@ -1,0 +1,42 @@
+{
+    "name": "react-storybook-https",
+    "version": "0.1.0",
+    "keywords": [
+        "react",
+        "storybook",
+        "template"
+    ],
+    "description": "",
+    "author": "https://github.com/przpl",
+    "license": "MIT",
+    "homepage": "https://github.com/przpl/storybook-react-https",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/przpl/storybook-react-https.git"
+    },
+    "bugs": {
+        "url": "https://github.com/przpl/storybook-react-https/issues"
+    },
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "rimraf -rf dist && tsc",
+        "npm:publish": "npm publish --public",
+        "storybook": "start-storybook -p 6006 --https --ssl-cert ./.dev/cert.pem --ssl-key ./.dev/key.pem"
+    },
+    "peerDependencies": {
+        "react": "^16.0.0 || ^17.0.0 || ^18.0.0"
+    },
+    "devDependencies": {
+        "@storybook/addon-essentials": "^6.5.9",
+        "@storybook/builder-webpack5": "^6.5.9",
+        "@storybook/manager-webpack5": "^6.5.9",
+        "@storybook/react": "^6.5.9",
+        "@types/node": "18.0.4",
+        "@types/react": "18.0.15",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "rimraf": "3.0.2",
+        "typescript": "4.7.4",
+        "webpack": "^5.73.0"
+    }
+}
